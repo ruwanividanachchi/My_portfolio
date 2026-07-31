@@ -7,26 +7,16 @@ import { FaGithub } from 'react-icons/fa';
 const projectsData = [
   {
     id: 1,
-    title: "HLC BIM Platform - HVAC Design Studio",
+    title: "Interactive Building Modelling and Heat Load Analysis Platform",
     category: "Web",
-    description: "Currently developing a full-stack web-based HVAC Design Studio with real-time Heat Load Calculation. Features interactive 2D room layout design using Canvas API, dynamic heat load analysis, user authentication with Supabase, and professional engineering workflow.",
-    tech: ["Next.js 16", "TypeScript", "Tailwind CSS", "Supabase", "PostgreSQL", "Canvas API", "Google OAuth"],
+    description: "Bachelor's Thesis project. Developed a full-stack web application for interactive building modelling and HVAC cooling load analysis. Built 2D floor-plan editing and 3D building visualization using Three.js with real-time engineering calculations. Integrated external APIs and Supabase for data management, authentication, and project storage.",
+    tech: ["Next.js", "TypeScript", "Three.js", "Supabase", "REST APIs"],
     github: "https://github.com/t3idma00/hlc-bim-platform",
     live: "#",
-    date: "March 2026 – Present"
+    date: "March 2026 – May 2026"
   },
   {
     id: 2,
-    title: "Smooth Transitions - Agentic AI Workflow Platform",
-    category: "AI",
-    description: "Currently researching and developing an AI-powered platform that enables seamless transitions between tasks, meetings, and digital/physical workspaces using Agentic AI to understand context and reduce cognitive overload.",
-    tech: ["Agentic AI", "AI Research", "Task Management"],
-    github: "https://github.com/Demola-Projects/team-2229",
-    live: "#",
-    date: "March 2026 – Present"
-  },
-  {
-    id: 3,
     title: "AI-Assisted Job Application Tracker",
     category: "AI",
     description: "Developed a full-stack proof-of-concept web application that tracks job applications and uses AI (Google Gemini) to analyze job descriptions, extract required skills, calculate match scores, and generate personalized improvement suggestions.",
@@ -34,6 +24,16 @@ const projectsData = [
     github: "https://github.com/jmadusanka/job-application-tracker",
     live: "https://job-application-tracker-virid-eight.vercel.app/",
     date: "Jan 2026 – Feb 2026"
+  },
+  {
+    id: 3,
+    title: "Smooth Transitions - Agentic AI Workflow Platform",
+    category: "AI",
+    description: "Researched and developed an AI-powered platform that enables seamless transitions between tasks, meetings, and digital/physical workspaces using Agentic AI to understand context and reduce cognitive overload.",
+    tech: ["Agentic AI", "Next.js", "TypeScript", "AI Research", "Task Management"],
+    github: "https://github.com/Demola-Projects/team-2229",
+    live: "#",
+    date: "March 2026 – May 2026"
   },
   {
     id: 4,

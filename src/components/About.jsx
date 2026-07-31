@@ -25,18 +25,17 @@ const About = () => (
             <h2 className="section-title display-5 fw-bold mb-4">About Me</h2>
             
             <p className="lead text-secondary mb-4">
-              Final-year Information Technology student at Oulu University of Applied Sciences (GPA 4.25) with strong foundations in software engineering, backend and web development, and system-level programming.
+              Bachelor of Engineering (Information Technology) graduate from Oulu University of Applied Sciences with strong software engineering skills in backend development, web technologies, cloud services, and mobile applications.
             </p>
 
             <p>
-              I have hands-on experience building production-style applications using 
-              <strong> Python, JavaScript/TypeScript, Kotlin, REST APIs, databases, and Linux environments</strong>.
+              Experienced in designing and building full-stack applications using 
+              <strong> Java, Python, TypeScript, React, Next.js, Kotlin, PostgreSQL, and REST APIs</strong>.
             </p>
             
             <p>
-              Strong focus on clean code, testing, debugging, and problem solving. 
-              Growing interest in secure software development, cloud platforms, and AI-assisted systems. 
-              Highly motivated to learn and contribute to real-world engineering teams.
+              Passionate about clean code, scalable software, cloud technologies, AI-assisted applications, and solving real-world engineering problems. 
+              Actively seeking Graduate Software Engineer and Full-Stack Developer opportunities.
             </p>
           </motion.div>
         </Col>

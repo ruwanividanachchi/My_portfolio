@@ -6,8 +6,8 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 const Hero = () => {
   const greeting = "Hi,";
   const name = "I'm Ruwani Vidanachchi";
-  const title = "Final-Year Software Engineering Student";
-  const description = "Passionate about building modern web & mobile applications with clean code, AI, and cloud technologies. Currently studying at Oulu University of Applied Sciences.";
+  const title = "Software Engineer";
+  const description = "Bachelor of Engineering graduate from Oulu University of Applied Sciences with strong skills in full-stack development, cloud services, and AI-assisted applications. Actively seeking Graduate Software Engineer and Full-Stack Developer opportunities.";
 
   return (
     <section className="min-vh-100 d-flex align-items-center pt-5" id="hero">
@@ -99,7 +99,7 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Social Icons - Correct Links */}
+          {/* Social Icons */}
           <div className="mt-5 d-flex justify-content-center gap-5">
             <a 
               href="https://github.com/ruwanividanachchi" 
