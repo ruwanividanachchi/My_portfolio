@@ -12,7 +12,7 @@ const projectsData = [
     description: "Bachelor's Thesis project. Developed a full-stack web application for interactive building modelling and HVAC cooling load analysis. Built 2D floor-plan editing and 3D building visualization using Three.js with real-time engineering calculations. Integrated external APIs and Supabase for data management, authentication, and project storage.",
     tech: ["Next.js", "TypeScript", "Three.js", "Supabase", "REST APIs"],
     github: "https://github.com/t3idma00/hlc-bim-platform",
-    live: "#",
+    live: "https://urn.fi/URN:NBN:fi:amk-2026052416043",
     date: "March 2026 – May 2026"
   },
   {
@@ -165,7 +165,7 @@ const Projects = ({ filter, setFilter }) => {
                             target="_blank"
                             className="d-flex align-items-center gap-2"
                           >
-                            Live Demo <ExternalLink size={18} />
+                            {project.live.includes("urn.fi") ? "Thesis" : "Live Demo"} <ExternalLink size={18} />
                           </Button>
                         )}
                       </div>
