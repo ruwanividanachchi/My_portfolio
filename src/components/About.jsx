@@ -30,7 +30,7 @@ const About = () => (
 
             <p>
               Experienced in designing and building full-stack applications using 
-              <strong> Java, Python, TypeScript, React, Next.js, Kotlin, PostgreSQL, and REST APIs</strong>.
+              <strong> JavaScript, Python, TypeScript, React, Next.js, Kotlin, PostgreSQL, and REST APIs</strong>.
             </p>
             
             <p>
