@@ -31,7 +31,7 @@ const projectsData = [
     category: "AI",
     description: "Researched and developed an AI-powered platform that enables seamless transitions between tasks, meetings, and digital/physical workspaces using Agentic AI to understand context and reduce cognitive overload.",
     tech: ["Agentic AI", "Next.js", "TypeScript", "AI Research", "Task Management"],
-    github: "https://github.com/Demola-Projects/team-2229",
+    video: "https://share.synthesia.io/e394c4f4-679c-458f-bcb6-9c5e1f83cf32",
     live: "#",
     date: "March 2026 – May 2026"
   },
