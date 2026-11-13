@@ -47,6 +47,16 @@ const projectsData = [
   },
   {
     id: 5,
+    title: "Autonomous Drone Navigation & AI Object Detection",
+    category: "AI",
+    description: "Developed an experimental autonomous drone system using Python and DJI Tello. Integrated YOLOv8 for object detection and OpenCV for visual processing, including red landing-pad recognition and QR code scanning. Implemented autonomous flight control, visual alignment, obstacle-response logic, and a Tkinter-based interface for manual and autonomous operation.",
+    tech: ["Python", "DJI Tello", "DJITelloPy", "YOLOv8", "OpenCV", "PyTorch", "NumPy", "Tkinter"],
+    github: "https://github.com/ruwanividanachchi/Robotic-project-experiment/tree/main/Tello_Auto_AI_Project",
+    live: "#",
+    date: "Sep 2025 – Dec 2025"
+  },
+  {
+    id: 6,
     title: "AstroTrack - Android Application",
     category: "Mobile",
     description: "Built a native Android educational application that fetches real-time space and astronomy data from NASA APIs. Implemented secure authentication, background processing with WorkManager, and clean MVVM architecture using Jetpack Compose.",
@@ -56,7 +66,7 @@ const projectsData = [
     date: "Mar 2025 – Apr 2025"
   },
   {
-    id: 6,
+    id: 7,
     title: "OAMKINO - Full-Stack Movie Application",
     category: "Web",
     description: "Developed a complete full-stack movie information and booking platform with secure user authentication, RESTful backend, and external API integration (Finnkino).",
@@ -66,7 +76,7 @@ const projectsData = [
     date: "Oct 2024 – Dec 2024"
   },
   {
-    id: 7,
+    id: 8,
     title: "Travel Blog Website",
     category: "Web",
     description: "Created a fully functional database-driven blog platform with user authentication, content management system (CRUD), and responsive design.",
@@ -93,7 +103,7 @@ const Projects = ({ filter, setFilter }) => {
   return (
     <section id="projects" className="py-5">
       <Container>
-        <motion.h2 
+        <motion.h2
           className="text-center mb-5 display-5 fw-bold accent-gradient"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -129,43 +139,65 @@ const Projects = ({ filter, setFilter }) => {
                   <Card className="project-card glass h-100 border-0 shadow-sm">
                     <Card.Body className="d-flex flex-column p-4">
                       <div className="d-flex justify-content-between align-items-start mb-3">
-                        <Badge bg="primary" className="px-3 py-2">{project.category}</Badge>
-                        <small style={{ color: 'var(--text-secondary)' }}>{project.date}</small>
+                        <Badge bg="primary" className="px-3 py-2">
+                          {project.category}
+                        </Badge>
+                        <small style={{ color: 'var(--text-secondary)' }}>
+                          {project.date}
+                        </small>
                       </div>
 
-                      <Card.Title className="fs-4 fw-bold mb-3" style={{ color: 'var(--text)' }}>
+                      <Card.Title
+                        className="fs-4 fw-bold mb-3"
+                        style={{ color: 'var(--text)' }}
+                      >
                         {project.title}
                       </Card.Title>
-                      <Card.Text className="flex-grow-1 mb-4" style={{ color: 'var(--text-secondary)' }}>
+
+                      <Card.Text
+                        className="flex-grow-1 mb-4"
+                        style={{ color: 'var(--text-secondary)' }}
+                      >
                         {project.description}
                       </Card.Text>
 
                       <div className="mb-4">
                         {project.tech.map((t, i) => (
-                          <Badge key={i} bg="secondary" className="me-1 mb-1">{t}</Badge>
+                          <Badge
+                            key={i}
+                            bg="secondary"
+                            className="me-1 mb-1"
+                          >
+                            {t}
+                          </Badge>
                         ))}
                       </div>
 
                       <div className="d-flex gap-2 mt-auto">
-                        <Button 
-                          variant="outline-light" 
-                          size="sm" 
-                          href={project.github} 
+                        <Button
+                          variant="outline-light"
+                          size="sm"
+                          href={project.github}
                           target="_blank"
+                          rel="noopener noreferrer"
                           className="d-flex align-items-center gap-2"
                         >
                           <FaGithub size={18} /> GitHub
                         </Button>
 
                         {project.live && project.live !== "#" && (
-                          <Button 
-                            variant="primary" 
-                            size="sm" 
-                            href={project.live} 
+                          <Button
+                            variant="primary"
+                            size="sm"
+                            href={project.live}
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="d-flex align-items-center gap-2"
                           >
-                            {project.live.includes("urn.fi") ? "Thesis" : "Live Demo"} <ExternalLink size={18} />
+                            {project.live.includes("urn.fi")
+                              ? "Thesis"
+                              : "Live Demo"}
+                            <ExternalLink size={18} />
                           </Button>
                         )}
                       </div>
