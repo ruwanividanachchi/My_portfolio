@@ -29,10 +29,9 @@ const projectsData = [
     id: 3,
     title: "Smooth Transitions - Agentic AI Workflow Platform",
     category: "AI",
-    description: "Researched and developed an AI-powered platform that enables seamless transitions between tasks, meetings, and digital/physical workspaces using Agentic AI to understand context and reduce cognitive overload.",
+    description: "Collaborated on a Demola research and development project exploring an AI-powered platform for seamless transitions between tasks, meetings, and digital/physical workspaces. The project investigated how Agentic AI can understand context and help reduce cognitive overload.",
     tech: ["Agentic AI", "Next.js", "TypeScript", "AI Research", "Task Management"],
     video: "https://share.synthesia.io/e394c4f4-679c-458f-bcb6-9c5e1f83cf32",
-    live: "#",
     date: "March 2026 – May 2026"
   },
   {
@@ -94,7 +93,9 @@ const Projects = ({ filter, setFilter }) => {
     if (filter === 'All') {
       setFilteredProjects(projectsData);
     } else {
-      setFilteredProjects(projectsData.filter(p => p.category === filter));
+      setFilteredProjects(
+        projectsData.filter(p => p.category === filter)
+      );
     }
   }, [filter]);
 
@@ -142,6 +143,7 @@ const Projects = ({ filter, setFilter }) => {
                         <Badge bg="primary" className="px-3 py-2">
                           {project.category}
                         </Badge>
+
                         <small style={{ color: 'var(--text-secondary)' }}>
                           {project.date}
                         </small>
@@ -173,17 +175,35 @@ const Projects = ({ filter, setFilter }) => {
                         ))}
                       </div>
 
-                      <div className="d-flex gap-2 mt-auto">
-                        <Button
-                          variant="outline-light"
-                          size="sm"
-                          href={project.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="d-flex align-items-center gap-2"
-                        >
-                          <FaGithub size={18} /> GitHub
-                        </Button>
+                      <div className="d-flex flex-wrap gap-2 mt-auto">
+
+                        {project.github && (
+                          <Button
+                            variant="outline-light"
+                            size="sm"
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="d-flex align-items-center gap-2"
+                          >
+                            <FaGithub size={18} />
+                            GitHub
+                          </Button>
+                        )}
+
+                        {project.video && (
+                          <Button
+                            variant="primary"
+                            size="sm"
+                            href={project.video}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="d-flex align-items-center gap-2"
+                          >
+                            Watch Demo
+                            <ExternalLink size={18} />
+                          </Button>
+                        )}
 
                         {project.live && project.live !== "#" && (
                           <Button
@@ -200,6 +220,7 @@ const Projects = ({ filter, setFilter }) => {
                             <ExternalLink size={18} />
                           </Button>
                         )}
+
                       </div>
                     </Card.Body>
                   </Card>
